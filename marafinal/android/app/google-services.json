@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "357642137148",
+    "project_id": "mara-6c4f8",
+    "storage_bucket": "mara-6c4f8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:357642137148:android:492d346a07f0d0cf309d39",
+        "android_client_info": {
+          "package_name": "com.example.marafinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "357642137148-slf917abm0b5q5n9861fp7t5htbj93p5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPzjvOKlUyAXUd45_nxeNmqiyc-e9LMZg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "357642137148-slf917abm0b5q5n9861fp7t5htbj93p5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
