@@ -1,0 +1,75 @@
+############################
+# Global ignores
+############################
+.DS_Store
+.idea/
+.vscode/
+
+############################
+# Python backend
+############################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+venv/
+.venv/
+.env
+.env.*
+.python-version
+
+# Logs
+*.log
+
+# Local settings / secrets
+serviceAccount.json
+
+############################
+# Flutter / Dart
+############################
+.dart_tool/
+.packages
+pubspec.lock
+build/
+flutter_export_environment.sh
+
+# Coverage
+coverage/
+
+# iOS
+ios/Pods/
+ios/Runner.xcworkspace/
+ios/DerivedData/
+ios/build/
+**/xcuserdata/
+**/*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Android
+android/.gradle/
+android/local.properties
+android/**/build/
+
+# Generated files
+**/GeneratedPluginRegistrant.*
+
+# Misc
+*.swp
+*.swo
+*.iml
+
+############################
+# Node (if any future)
+############################
+node_modules/
+
+# Temporary
+tmp/
+temp/
