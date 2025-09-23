@@ -1,5 +1,5 @@
 <div align="center">
-	<img src="assets/logo.png" alt="Mara Logo" width="120" />
+	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
   
 	# Mara
 	**AI‑powered personal health assistant** delivering safe, multilingual and privacy‑aware medical insights.
