@@ -3,8 +3,8 @@
   
 	             Mara | مَرَا
 	AI‑powered personal health assistant** delivering safe, multilingual and privacy‑aware medical insights.
-	<br/>
-	<strong>Mobile App (Flutter) · FastAPI Backend · Firebase · RevenueCat · AI Inference</strong>
+	
+	 Mobile App (Flutter) · FastAPI Backend · Firebase · RevenueCat · AI Inference 
 </div>
 
 ---
