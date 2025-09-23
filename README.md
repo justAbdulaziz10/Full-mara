@@ -1,13 +1,11 @@
 <div align="center">
 	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
   
-	# Mara
+	Mara
 	**AI‑powered personal health assistant** delivering safe, multilingual and privacy‑aware medical insights.
 	<br/>
 	<strong>Mobile App (Flutter) · FastAPI Backend · Firebase · RevenueCat · AI Inference</strong>
 </div>
-
-> Disclaimer: Mara is an informational assistant and does not replace professional medical diagnosis or emergency services.
 
 ---
 
