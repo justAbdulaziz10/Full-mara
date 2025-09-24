@@ -82,7 +82,8 @@ Response (simplified):
 
 
 ## 📜 License
-MIT License. See [LICENSE.md]([License.md]).
+This project is strictly proprietary.  
+See [License.md](./License.md) for full legal terms.
 
 ## 👥 Team
 - [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder
