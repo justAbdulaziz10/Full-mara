@@ -82,7 +82,7 @@ Response (simplified):
 
 
 ## 📜 License
-MIT License. See [LICENSE.md]([./LICENSE.md](https://github.com/justAbdulaziz10/Full-mara/blob/main/License.md)).
+MIT License. See [LICENSE.md]([./LICENSE.md]).
 
 ## 👥 Team
 - [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder
