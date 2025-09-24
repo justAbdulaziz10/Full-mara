@@ -82,7 +82,7 @@ Response (simplified):
 
 
 ## 📜 License
-MIT License. See [LICENSE.md]([./LICENSE.md]).
+MIT License. See [LICENSE.md]([License.md]).
 
 ## 👥 Team
 - [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder
