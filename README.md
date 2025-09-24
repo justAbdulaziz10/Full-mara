@@ -9,10 +9,10 @@
 
 ---
 
-## � Overview
+## Overview
 Mara combines a Flutter mobile client with a Python (FastAPI) backend that mediates authentication, usage quotas, multilingual processing, AI reasoning, and (future) record/file analysis. Subscriptions & entitlements are handled through RevenueCat; authentication and basic user metadata through Firebase. PostgreSQL (via Supabase) or future storage layers can back persistent analytics and usage.
 
-## � Project Structure
+## Project Structure
 ```
 .
 ├── backend/                 # FastAPI service (API, auth, translation, AI calls)
