@@ -82,15 +82,15 @@ Response (simplified):
 
 
 ## 📜 License
-MIT License. See `LICENSE` (add if missing).
+MIT License. See [LICENSE.txt](./LICENSE.txt).
 
 ## 👥 Team
-- Abdulaziz Alkhlaiwe – Co‑founder
-- Omar Al Sumih – Co‑founder
+- [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder
+- [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/) - Co-Founder
 
 ## 📬 Contact
 Website: https://www.iammara.com
-Email: contact@iammara.com
+Email: support@iammara.com
 
 ---
 Made with care to make health knowledge more accessible.
