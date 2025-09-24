@@ -20,6 +20,8 @@ venv/
 .venv/
 .env
 .env.*
+*.env
+**/*.env
 .python-version
 
 # Logs
@@ -27,6 +29,11 @@ venv/
 
 # Local settings / secrets
 serviceAccount.json
+serviceAccount*.json
+credentials.json
+*.pem
+*.key
+*.crt
 
 ############################
 # Flutter / Dart

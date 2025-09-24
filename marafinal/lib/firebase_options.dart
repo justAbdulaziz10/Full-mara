@@ -49,21 +49,24 @@ class DefaultFirebaseOptions {
     }
   }
 
+  // Read from --dart-define with safe defaults (generated values).
+  // Example build:
+  // flutter run --dart-define=FIREBASE_ANDROID_API_KEY=xxx --dart-define=FIREBASE_ANDROID_APP_ID=yyy ...
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyDPzjvOKlUyAXUd45_nxeNmqiyc-e9LMZg',
-    appId: '1:357642137148:android:492d346a07f0d0cf309d39',
-    messagingSenderId: '357642137148',
-    projectId: 'mara-6c4f8',
-    storageBucket: 'mara-6c4f8.firebasestorage.app',
+    apiKey: 'FIREBASE_ANDROID_API_KEY',
+    appId: 'FIREBASE_ANDROID_APP_ID',
+    messagingSenderId: 'FIREBASE_MESSAGING_SENDER_ID',
+    projectId: 'FIREBASE_PROJECT_ID',
+    storageBucket: 'FIREBASE_STORAGE_BUCKET',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyDq_W9Ow_2cvbxWTrJoA9I7au4ht8IF8xw',
-    appId: '1:357642137148:ios:bce657aed6351e64309d39',
-    messagingSenderId: '357642137148',
-    projectId: 'mara-6c4f8',
-    storageBucket: 'mara-6c4f8.firebasestorage.app',
-    iosClientId: '357642137148-o3jt9fg34444nln74638roqu3rd29su0.apps.googleusercontent.com',
-    iosBundleId: 'com.iammara.maraApp',
+    apiKey: 'FIREBASE_IOS_API_KEY',
+    appId: 'FIREBASE_IOS_APP_ID',
+    messagingSenderId: 'FIREBASE_MESSAGING_SENDER_ID',
+    projectId: 'FIREBASE_PROJECT_ID',
+    storageBucket: 'FIREBASE_STORAGE_BUCKET',
+    iosClientId: 'FIREBASE_IOS_CLIENT_ID',
+    iosBundleId: 'FIREBASE_IOS_BUNDLE_ID',
   );
 }
