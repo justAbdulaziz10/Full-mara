@@ -79,36 +79,6 @@ Response (simplified):
 { "reply": "...", "source_lang": "es", "usage_left": 7 }
 ```
 
-## ⚙️ Configuration (Backend Environment Variables)
-| Variable | Purpose | Default |
-|----------|---------|---------|
-| APP_ENV | Environment label | dev |
-| APP_NAME | Service title | Mara Backend |
-| APP_ORIGINS | Comma list of CORS origins | * |
-| PORT | HTTP port | 8000 |
-| VERIFY_ID_TOKEN | Enforce Firebase ID token verification | true |
-| FIREBASE_PROJECT_ID | Firebase project id | — |
-| FIREBASE_CREDENTIALS_JSON_BASE64 | Base64 service account JSON | — |
-| OPENAI_API_KEY | OpenAI key (if using OpenAI) | — |
-| OPENAI_MODEL | Model name | gpt-4o-mini |
-| HF_API_TOKEN | Hugging Face token | — |
-| HF_INFERENCE_URL | Custom HF inference endpoint | — |
-| FREE_DAILY_MESSAGES | Free quota messages | 10 |
-| FREE_MAX_CHARS | Max characters per message | 500 |
-
-Local secret management: create `.env` and export before running or use a process manager that loads env vars.
-
-
-## 🔄 Quotas & Usage
-`usage_store.py` currently uses an in-memory or placeholder approach; replace with persistent storage (Redis/Postgres) for production scaling and multi‑instance deployments.
-
-## 🗺 Roadmap (High Level)
-- [ ] Persistent usage + analytics storage
-- [ ] File / lab report ingestion & structured extraction
-- [ ] Enhanced risk triage prompts
-- [ ] Subscription tier differentiation (limits & premium models)
-- [ ] Edge / serverless deployment (Cloudflare Workers adapter or container)
-- [ ] Offline smart mirror mode (local distilled model)
 
 
 ## 📜 License
