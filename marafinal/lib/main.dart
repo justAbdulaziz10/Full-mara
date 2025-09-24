@@ -4,6 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:marafinal/features/auth/data/firebase_auth_repo.dart';
 import 'package:marafinal/features/auth/presentation/cubits/auth_cubit.dart';
+import 'package:marafinal/features/profile/presentation/cubits/profile_cubit.dart';
 import 'package:marafinal/features/side_menu/sebscriptions/data/revenuecat_service.dart';
 import 'package:marafinal/features/side_menu/sebscriptions/presentation/cubits/offerings_cubit.dart';
 import 'package:marafinal/features/side_menu/sebscriptions/presentation/cubits/subscription_cubit.dart';
@@ -79,6 +80,7 @@ class MyApp extends StatelessWidget {
           create: (context) => SubscriptionCubit(),
         ),
         BlocProvider<OfferingsCubit>(create: (context) => OfferingsCubit()),
+        BlocProvider<ProfileCubit>(create: (context) => ProfileCubit()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

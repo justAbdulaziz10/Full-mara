@@ -1,11 +1,14 @@
 // lib/auth_gate.dart
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+
+import 'core/services/backend_api.dart';
+import 'features/auth/presentation/components/loading.dart';
 import 'features/auth/presentation/cubits/auth_cubit.dart';
 import 'features/auth/presentation/cubits/auth_states.dart';
 import 'features/auth/presentation/pages/auth_page.dart';
 import 'features/home/presentation/pages/home_page.dart';
-import 'features/auth/presentation/components/loading.dart';
+import 'features/profile/presentation/cubits/profile_cubit.dart';
 import 'features/side_menu/sebscriptions/presentation/cubits/subscription_cubit.dart';
 
 class AuthGate extends StatelessWidget {
@@ -32,7 +35,15 @@ class AuthGate extends StatelessWidget {
         if (state is Authenticated) {
           final subscriptionCubit = context.read<SubscriptionCubit>();
           subscriptionCubit.checkProStatus();
-          print("Checking subscription status after authentication");
+          // Fire-and-forget sync with backend; errors logged but not blocking UI
+          BackendApi.syncWithBackend().catchError(
+            (e) => debugPrint('Backend sync failed: $e'),
+          );
+          // Load profile
+          context.read<ProfileCubit>().loadProfile();
+          print(
+            "Checking subscription status & loading profile after authentication",
+          );
         }
       },
     );

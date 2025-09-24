@@ -23,6 +23,7 @@ venv/
 *.env
 **/*.env
 .python-version
+./firebase-service-account.json
 
 # Logs
 *.log
@@ -34,6 +35,10 @@ credentials.json
 *.pem
 *.key
 *.crt
+# Firebase service keys (avoid committing secrets)
+firebase-service-account.json
+**/firebase-service-account.json
+backend/firebase-service-account.json
 
 ############################
 # Flutter / Dart

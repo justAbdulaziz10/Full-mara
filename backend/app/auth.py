@@ -1,9 +1,14 @@
+import os
+from typing import Optional
+
 import firebase_admin
-from fastapi import HTTPException, status
-from firebase_admin import auth, credentials
+from dotenv import load_dotenv
+from fastapi import Header, HTTPException, status
 
 from .config import decode_firebase_credentials, get_settings
 from .logger import logger
+
+load_dotenv()
 
 _settings = get_settings()
 if _settings.verify_id_token:
@@ -16,11 +21,17 @@ if _settings.verify_id_token:
             logger.warning("VERIFY_ID_TOKEN=true but Firebase credentials not provided")
 
 
-def verify_bearer(token: str) -> dict:
+def verify_bearer(authorization: str=Header(...)) -> dict:
     if not _settings.verify_id_token:
-        # DEV ONLY: accept token and return a fake user
-        return {"uid":"dev-user", "email":"dev@example.com"}
+        return {"uid": "dev-user", "email": "dev@example.com"}
+
+    if not authorization.lower().startswith("bearer "):
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Missing Bearer token")
+
+    token = authorization.split(" ", 1)[1].strip()
+
     try:
+        from firebase_admin import auth
         return auth.verify_id_token(token)
     except Exception:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
