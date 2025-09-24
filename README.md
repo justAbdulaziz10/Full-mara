@@ -98,38 +98,6 @@ Response (simplified):
 
 Local secret management: create `.env` and export before running or use a process manager that loads env vars.
 
-## 🧩 Backend: Run Locally
-```
-cd backend
-python3 -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-cp .env.example .env  # (create one if not present) and fill values
-uvicorn app.main:app --reload
-```
-Visit: http://localhost:8000/healthz
-
-Prod (example):
-```
-gunicorn -k uvicorn.workers.UvicornWorker -c gunicorn_conf.py app.main:app
-```
-
-## 📱 Flutter App: Run Locally
-Prerequisites: Flutter SDK (3.x), Xcode (iOS), Android Studio (Android), Firebase CLI.
-```
-cd marafinal
-flutter pub get
-flutter run  # select device
-```
-Make sure `firebase_options.dart` is generated (FlutterFire CLI) and `GoogleService-Info.plist` / `google-services.json` are present.
-
-## 🧪 Testing
-Flutter widget tests:
-```
-cd marafinal
-flutter test
-```
-Backend (add tests folder in future): pytest (planned).
 
 ## 🔄 Quotas & Usage
 `usage_store.py` currently uses an in-memory or placeholder approach; replace with persistent storage (Redis/Postgres) for production scaling and multi‑instance deployments.
@@ -142,21 +110,13 @@ Backend (add tests folder in future): pytest (planned).
 - [ ] Edge / serverless deployment (Cloudflare Workers adapter or container)
 - [ ] Offline smart mirror mode (local distilled model)
 
-## 🤝 Contributing
-1. Fork & branch (`feat/your-topic`)
-2. Keep changes scoped & documented
-3. Add/update tests where applicable
-4. Open PR with description, screenshots (UI) or sample responses (API)
-
-## � Security
-Do not commit secrets. Rotate compromised keys immediately. For disclosures, email: `security@iammara.com`.
 
 ## 📜 License
 MIT License. See `LICENSE` (add if missing).
 
 ## 👥 Team
-- Abdulaziz Alkhlaiwe – Co‑founder, AI/Backend
-- Omar – Co‑founder, Frontend
+- Abdulaziz Alkhlaiwe – Co‑founder
+- Omar Al Sumih – Co‑founder
 
 ## 📬 Contact
 Website: https://www.iammara.com
