@@ -96,8 +96,8 @@ This project is strictly proprietary.
 See [License.md](./License.md) for full legal terms.
 
 ## 👥 Team
-- [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder
-- [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/) - Co-Founder
+- [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder / abdulaziz.alkhlaiwe@iammara.com
+- [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/) - Co-Founder / omaralsumih@iammara.com
 
 ## 📬 Contact
 Website: https://www.iammara.com
