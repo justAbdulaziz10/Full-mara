@@ -147,20 +147,20 @@ Response (simplified):
 ⸻
 
 🤝 Social Impact & SDGs
-	•	Affordable health access for students and underserved communities.
-	•	Promoting preventive healthcare and digital literacy.
-	•	Encouraging healthier lifestyles via reminders & tracking.
-	•	Supports UN Goals:
-	•	SDG 3: Good Health & Well-Being
-	•	SDG 4: Quality Education
-	•	SDG 9: Innovation & Infrastructure
+	-	Affordable health access for students and underserved communities.
+	-	Promoting preventive healthcare and digital literacy.
+	-	Encouraging healthier lifestyles via reminders & tracking.
+	-	Supports UN Goals:
+	-	SDG 3: Good Health & Well-Being
+	-	SDG 4: Quality Education
+	-	SDG 9: Innovation & Infrastructure
 
 ⸻
 
 ⚠️ Challenges
-	•	Compliance with strict data privacy laws.
-	•	Access to diverse, high-quality medical datasets.
-	•	Small team & limited resources.
+	-	Compliance with strict data privacy laws.
+	-	Access to diverse, high-quality medical datasets.
+	-	Small team & limited resources.
 
 ⸻
 
