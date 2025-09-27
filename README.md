@@ -132,21 +132,21 @@ Response (simplified):
 { "reply": "...", "source_lang": "es", "usage_left": 7 }
 ```
 
-💰 Business Model
+## 💰 Business Model
 	•	Free: Up to 10 daily messages, simple analytics.
 	•	Monthly (SAR10): Unlimited messages + full analytics.
 	•	Annual (SAR100): Unlimited messages + full suite.
 
 ⸻
 
-📈 Traction
+## 📈 Traction
 	•	Prototype ready, first MVP of Mara app.
 	•	200+ early access signups.
 	•	+2,000 unique visitors on Mara landing page.
 
 ⸻
 
-🤝 Social Impact & SDGs
+## 🤝 Social Impact & SDGs
 	-	Affordable health access for students and underserved communities.
 	-	Promoting preventive healthcare and digital literacy.
 	-	Encouraging healthier lifestyles via reminders & tracking.
@@ -157,7 +157,7 @@ Response (simplified):
 
 ⸻
 
-⚠️ Challenges
+## ⚠️ Challenges
 	-	Compliance with strict data privacy laws.
 	-	Access to diverse, high-quality medical datasets.
 	-	Small team & limited resources.
