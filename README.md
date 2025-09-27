@@ -12,6 +12,14 @@
 ## Overview
 Mara combines a Flutter mobile client with a Python (FastAPI) backend that mediates authentication, usage quotas, multilingual processing, AI reasoning, and (future) record/file analysis. Subscriptions & entitlements are handled through RevenueCat; authentication and basic user metadata through Firebase. PostgreSQL (via Supabase) or future storage layers can back persistent analytics and usage.
 
+---
+
+## 🚀 Vision & Mission
+- **Mission**: Revolutionize healthcare by making safe, multilingual AI health guidance accessible to everyone.  
+- **Vision**: Become the leading AI-powered health platform in the MENA region and beyond, bridging the gap between preventive health and personalized care.
+
+---
+
 ## Project Structure
 ```
 .
@@ -59,6 +67,15 @@ Mara combines a Flutter mobile client with a Python (FastAPI) backend that media
 | Data / Future| PostgreSQL (Supabase) |
 | Infra (future)| Docker, Cloudflare Workers / Edge |
 
+---
+
+## 📊 Market Opportunity
+- **TAM**: $23B  
+- **SAM**: $290M  
+- **SOM**: $25M  
+
+---
+
 ## 🔐 Authentication & Authorization
 Clients send a Firebase ID token as a Bearer token. Verification can be disabled for local development with `VERIFY_ID_TOKEN=false` (not recommended in production). Entitlement / subscription state is expected to be checked client‑side (RevenueCat) and optionally asserted server‑side in future versions.
 
@@ -89,6 +106,37 @@ Response (simplified):
 { "reply": "...", "source_lang": "es", "usage_left": 7 }
 ```
 
+💰 Business Model
+	•	Free: Up to 10 daily messages, simple analytics.
+	•	Monthly (SAR10): Unlimited messages + full analytics.
+	•	Annual (SAR100): Unlimited messages + full suite.
+
+⸻
+
+📈 Traction
+	•	Prototype ready, first MVP of Mara app.
+	•	200+ early access signups.
+	•	+2,000 unique visitors on Mara landing page.
+
+⸻
+
+🤝 Social Impact & SDGs
+	•	Affordable health access for students and underserved communities.
+	•	Promoting preventive healthcare and digital literacy.
+	•	Encouraging healthier lifestyles via reminders & tracking.
+	•	Supports UN Goals:
+	•	SDG 3: Good Health & Well-Being
+	•	SDG 4: Quality Education
+	•	SDG 9: Innovation & Infrastructure
+
+⸻
+
+⚠️ Challenges
+	•	Compliance with strict data privacy laws.
+	•	Access to diverse, high-quality medical datasets.
+	•	Small team & limited resources.
+
+⸻
 
 
 ## 📜 License
@@ -96,8 +144,9 @@ This project is strictly proprietary.
 See [License.md](./License.md) for full legal terms.
 
 ## 👥 Team
-- [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder / abdulaziz.alkhlaiwe@iammara.com
-- [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/) - Co-Founder / omaralsumih@iammara.com
+- [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) – Co-Founder, CEO / abdulaziz.alkhlaiwe@iammara.com
+- [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/) - Co-Founder, CTO / omaralsumih@iammara.com
+- [Muhanned Almuwayhi](https://www.linkedin.com/in/muhannad-almuwayhi-b55547293/) - Co-Founder, CFO / muhannad.almuwayhi@iammara.com
 
 ## 📬 Contact
 Website: https://www.iammara.com
