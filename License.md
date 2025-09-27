@@ -1,111 +1,178 @@
 Copyright (c) 2025 [Abdulaziz Alkhlaiwe](https://www.linkedin.com/in/abdulaziz-alkhlaiwe/) and [Omar Al Sumih](https://www.linkedin.com/in/omar-alsumih/)
 
-1. Official Distribution Only
 
-1.1 The Software may only be downloaded, installed, or obtained through Mara’s official distribution channels (including, but not limited to, the official website, Apple App Store, Google Play Store, or other platforms explicitly designated by the Mara founding team).
-1.2 Any redistribution outside these official channels is strictly prohibited.
-1.3 Unauthorized mirrors, torrents, or third-party download links are expressly forbidden.
-1.4 Users must verify that they are installing the latest authentic release of Mara by checking digital signatures or published hashes provided by the Mara team.
 
-⸻
+---
 
-2. Commercial Use Restrictions
+## Permission Grant
 
-2.1 No person, entity, or organization may monetize, sell, or commercially exploit this Software (including derivative works or services based on it) without explicit prior written permission from the Mara founding team.
-2.2 All commercial rights are reserved exclusively to Mara.
-2.3 Academic research or nonprofit demonstrations are permitted, provided they do not involve resale or commercialization.
-2.4 Paid distribution, bundling with other products, or subscription models based on Mara require written contractual approval.
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and its associated documentation files (the “Software”), to:
 
-⸻
+- Use the Software for personal and non-commercial purposes.  
+- Copy and install the Software on supported devices.  
+- Modify the Software strictly for **personal, non-commercial use**.  
+- Merge the Software into other applications only when such use complies with this License.  
+- Publish or distribute the Software **solely through Mara’s official distribution channels**.  
+- Sublicense only with the **prior written consent of the Mara founding team**.  
+- Sell copies or derivative works **only with an explicit, signed commercial agreement** with Mara.  
 
-3. Attribution Requirement
+---
 
-3.1 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-3.2 Proper attribution to “Mara” must remain visible in any derivative interface or adapted system.
-3.3 Removal, obfuscation, or minimization of attribution is prohibited unless explicitly waived by the Mara team.
+## 1. Official Distribution Only
+- The Software may **only** be downloaded, installed, or obtained through Mara’s official distribution channels.  
+- Official channels include:  
+  - The official website: [iammara.com](https://iammara.com)  
+  - The Apple App Store  
+  - The Google Play Store  
+  - Any other platforms explicitly designated by the Mara founding team  
+- Redistribution through any third-party websites, torrents, peer-to-peer services, or unofficial app stores is **strictly prohibited**.  
 
-⸻
+---
 
-4. Integrity of Use
+## 2. Commercial Use Restrictions
+- No person, company, or organization may:  
+  - Monetize the Software directly.  
+  - Sell access to the Software.  
+  - Bundle the Software with paid products.  
+  - Offer Software-as-a-Service built upon Mara.  
+- All commercial rights are reserved exclusively by Mara.  
+- Exceptions may only be granted by **written approval** from Mara’s founding team.  
 
-4.1 Users are prohibited from removing, altering, or obscuring any copyright, trademark, or attribution notices within the Software.
-4.2 Any modification or redistribution that misrepresents the origin of the Software as anything other than Mara is strictly forbidden.
-4.3 Alterations that suggest false affiliation with hospitals, governments, or regulatory bodies are not permitted.
-4.4 The Software may not be rebranded, renamed, or reskinned to conceal its Mara origin.
+---
 
-⸻
+## 3. Attribution Requirement
+- The copyright notice and this permission notice **must** be included in:  
+  - All copies of the Software.  
+  - Any substantial portions of the Software.  
+- Removal or modification of copyright or attribution notices is **strictly forbidden**.  
 
-5. Data Privacy & Security Obligations
+---
 
-5.1 Users may not attempt to extract, harvest, or misuse any personal health data stored within Mara.
-5.2 Reverse-engineering, packet sniffing, or other attempts to intercept communications between the Software and its servers are prohibited.
-5.3 Compliance with applicable data privacy regulations (e.g., GDPR, HIPAA, Saudi PDPL) is mandatory for any entity integrating Mara into broader systems.
-5.4 Unauthorized storage, resale, or analysis of user health data obtained through Mara is strictly forbidden.
+## 4. Integrity of Use
+- Users may not remove, alter, or obscure:  
+  - Logos  
+  - Trademarks  
+  - Attribution notices  
+  - Security notices  
+- Any modification that misrepresents the origin of the Software as being from another entity is prohibited.  
 
-⸻
+---
 
-6. Technical Limitations & Reverse Engineering
+## 5. Security & Privacy
+- The Software is designed to prioritize **data security** and **user privacy**.  
+- Users may not attempt to:  
+  - Reverse-engineer encryption.  
+  - Interfere with secure communication.  
+  - Access or exfiltrate private data.  
+- Any breach of these terms may result in legal action under applicable cybersecurity and privacy laws.  
 
-6.1 Unauthorized cloning, reverse-engineering, or repackaging of this Software for any purpose is strictly prohibited.
-6.2 Attempts to bypass subscription restrictions, licensing mechanisms, or entitlements (including but not limited to RevenueCat, Firebase, or Supabase integrations) are expressly disallowed.
-6.3 Security testing or penetration research must only occur with prior written approval from the Mara founding team.
+---
 
-⸻
+## 6. Prohibited Uses
+The following are **strictly prohibited** without explicit written authorization:  
 
-7. Trademark & Branding
+1. **Reverse Engineering**  
+   - Decompiling, disassembling, or analyzing source code.  
 
-7.1 The Mara name, brand, and logo are trademarks of the founders and may not be used without explicit written consent.
-7.2 Unauthorized association of the Mara brand with external advertisements, sponsorships, or political statements is prohibited.
-7.3 No derivative product may imply official endorsement by Mara unless formally approved.
+2. **Unauthorized Cloning**  
+   - Creating duplicates of the Software for public distribution.  
 
-⸻
+3. **Repackaging**  
+   - Releasing modified builds under another name or brand.  
 
-8. Updates & Patching
+4. **Unauthorized AI Training**  
+   - Using Mara’s datasets, responses, or algorithms to train other models.  
 
-8.1 Mara reserves the right to push updates, bug fixes, or feature modifications at any time.
-8.2 Users must accept updates to continue lawful use of the Software.
-8.3 Attempts to block or circumvent update delivery mechanisms are not allowed.
+5. **Trademark Violations**  
+   - Using the Mara name, logo, or visual identity in unrelated projects.  
 
-⸻
+---
 
-9. Third-Party Dependencies
+## 7. Trademarks
+- “Mara,” “Mara Doctor,” the Mara logo, and related marks are **registered or unregistered trademarks** of the founders.  
+- No right, license, or permission is granted to use these marks without prior written consent.  
+- Unauthorized use may result in trademark infringement proceedings.  
 
-9.1 The Software may incorporate third-party libraries or APIs (e.g., FastAPI, Supabase, Argos Translate, PyTorch).
-9.2 Such components remain under their respective licenses, which must be respected.
-9.3 Mara does not guarantee compatibility with modified or outdated versions of these dependencies.
+---
 
-⸻
+## 8. Compliance with Laws
+- Users must comply with all local, regional, and international laws when using the Software.  
+- This includes:  
+  - Data protection laws (e.g., GDPR, Saudi PDPL).  
+  - Healthcare data regulations.  
+  - Export control laws.  
 
-10. Disclaimer of Warranty
+---
 
-THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT.
-10.1 In no event shall the authors or copyright holders be liable for any claim, damages, or other liability.
-10.2 Liability exclusions extend to direct, indirect, incidental, special, exemplary, or consequential damages.
-10.3 No guarantee is made that Mara will provide accurate medical diagnoses; it is a supportive guidance tool only.
-10.4 The Software is not a substitute for professional medical consultation or emergency healthcare.
+## 9. Updates & Modifications
+- Mara reserves the right to:  
+  - Issue updates, patches, or security fixes.  
+  - Disable outdated or unauthorized versions.  
+  - Terminate access to non-compliant users.  
 
-⸻
+---
 
-11. Additional Notes & Prohibitions
+## 10. Disclaimer of Warranty
+THE SOFTWARE IS PROVIDED “AS IS,” WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO:  
 
-11.1 Unauthorized distribution or repackaging for marketplaces not explicitly approved (such as alternative app stores) is prohibited.
-11.2 Automated scraping of Mara content, datasets, or APIs is forbidden.
-11.3 The Software may not be used in military, surveillance, or harmful biomedical research without express consent.
-11.4 Use in jurisdictions where AI health tools are restricted must comply with local laws.
-11.5 Any misuse, including spreading misinformation under the Mara name, will result in immediate license termination.
-11.6 By using this Software, you agree to abide by the above conditions and acknowledge that violations may result in legal action.
+- Warranties of merchantability  
+- Fitness for a particular purpose  
+- Non-infringement  
 
-⸻
+In no event shall the authors or copyright holders be liable for:  
 
-12. Termination
+- Claims  
+- Damages  
+- Liabilities  
+- Loss of data  
+- Security breaches  
+- Or any other issues arising from use of the Software  
 
-12.1 Mara reserves the right to revoke this license at any time if terms are violated.
-12.2 Termination may occur without notice in the event of severe breaches.
-12.3 Upon termination, all copies of the Software must be destroyed.
+---
 
-⸻
+## 11. Limitation of Liability
+- Users assume full responsibility for how they use the Software.  
+- Mara shall not be liable for:  
+  - Direct damages  
+  - Indirect damages  
+  - Consequential damages  
+  - Loss of profits or data  
+- Even if Mara has been advised of the possibility of such damages.  
 
-13. Governing Law & Jurisdiction
+---
 
-13.1 This license shall be governed by and construed in accordance with the laws of Saudi Arabia and applicable international treaties.
-13.2 Any disputes arising under this license shall be subject to the exclusive jurisdiction of the competent courts in Riyadh, Saudi Arabia.
+## 12. Enforcement
+- Any violation of this License may result in:  
+  - Immediate revocation of usage rights.  
+  - Account termination.  
+  - Legal proceedings.  
+
+---
+
+## 13. Governing Law
+- This License shall be governed by the laws of the Kingdom of Saudi Arabia.  
+- Legal disputes shall be settled in Riyadh courts unless otherwise agreed in writing.  
+
+---
+
+## 14. Future Amendments
+- Mara reserves the right to update this License at any time.  
+- Continued use of the Software constitutes agreement to the latest version.  
+
+---
+
+## 15. Acceptance
+By installing, downloading, or using Mara, you acknowledge that you:  
+
+- Have read this License.  
+- Understand its terms.  
+- Agree to be bound by all its conditions.  
+
+---
+
+## Additional Notes
+- Unauthorized cloning, reverse engineering, or repackaging of this Software for any purpose is strictly prohibited.  
+- The Mara name, brand, and logo are trademarks of the founders and may not be used without explicit written consent.  
+- By using this Software, you agree to abide by the above conditions and acknowledge that violations may result in **legal action**.  
+
+---
