@@ -163,6 +163,15 @@ Response (simplified):
 	-	Small team & limited resources.
 
 ⸻
+## Where to find us :)
+- [Linkedin](https://www.linkedin.com/company/yourmara/)
+- [Discord]([https://www.linkedin.com/in/omar-alsumih/](https://discord.com/invite/hVxvU4ekhJ))
+- [Instagram](https://www.instagram.com/iamurmara)
+- [Tiktok](https://www.tiktok.com/@iamurmara)
+- [x](https://x.com/iamurmara)
+- [Email](mailto:support@iammara.com?subject=Support%20Request)
+
+
 
 
 ## 📜 License
