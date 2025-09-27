@@ -76,6 +76,32 @@ Mara combines a Flutter mobile client with a Python (FastAPI) backend that media
 
 ---
 
+## 🧩 Problem We Solve
+- Lack of proactive health monitoring at home.  
+- Fragmented user experience (multiple apps for different health aspects).  
+- Mental health often overlooked.  
+- 70% of chronic diseases could be prevented with early detection (WHO).  
+- 1 in 4 people globally will experience a mental health condition in their lifetime (WHO).  
+
+---
+
+## 🏆 Unique Value Proposition
+- First in the region to integrate **AI health advice with lifestyle management**.  
+- Simple, accessible, and compliant with local & global regulations.  
+- A trusted path from **self-check to professional care**.  
+
+---
+
+## 🥊 Competitor Analysis
+| Competitor   | Strengths | Weaknesses |
+|--------------|-----------|------------|
+| Apple Health | Strong ecosystem, iPhone/Watch integration | Requires wearables, no deep emotion analysis |
+| Google Fit   | Broad Android integration, activity & vitals tracking | Basic mental health tracking, no facial/emotion recognition |
+| Fitbit App   | Good fitness & sleep tracking | Needs dedicated hardware, lacks AI-driven insights |
+| ChatGPT      | Strong conversational AI adaptable to health | Not specialized for preventive health monitoring |
+
+---
+
 ## 🔐 Authentication & Authorization
 Clients send a Firebase ID token as a Bearer token. Verification can be disabled for local development with `VERIFY_ID_TOKEN=false` (not recommended in production). Entitlement / subscription state is expected to be checked client‑side (RevenueCat) and optionally asserted server‑side in future versions.
 
@@ -153,4 +179,4 @@ Website: https://www.iammara.com
 Email: contact@iammara.com
 
 ---
-Made with care to make health knowledge more accessible.
+Made with ❤️ to make health knowledge more accessible.
