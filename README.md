@@ -105,15 +105,6 @@ Mara combines a Flutter mobile client with a Python (FastAPI) backend that media
 ## 🔐 Authentication & Authorization
 Clients send a Firebase ID token as a Bearer token. Verification can be disabled for local development with `VERIFY_ID_TOKEN=false` (not recommended in production). Entitlement / subscription state is expected to be checked client‑side (RevenueCat) and optionally asserted server‑side in future versions.
 
-### Secrets and config
-
-- Copy `.env.example` to `.env` and fill values for local backend.
-- Flutter uses compile-time defines for secrets. Pass them with `--dart-define`, e.g.:
-	- `--dart-define=REVENUECAT_APPLE_API_KEY=xxxx`
-	- `--dart-define=FIREBASE_ANDROID_API_KEY=xxxx` and iOS equivalents.
-- Pre-commit secret scan: enable by running
-	- `git config core.hooksPath .githooks`
-	- ensure scripts are executable: `chmod +x scripts/secret_scan.sh .githooks/pre-commit`
 
 ## 📡 API Summary (Current)
 | Method | Path              | Description                              | Auth |
