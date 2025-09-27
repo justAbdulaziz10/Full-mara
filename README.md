@@ -165,7 +165,7 @@ Response (simplified):
 ⸻
 ## Where to find us :)
 - [Linkedin](https://www.linkedin.com/company/yourmara/)
-- [Discord]([https://www.linkedin.com/in/omar-alsumih/](https://discord.com/invite/hVxvU4ekhJ))
+- [Discord](https://discord.com/invite/hVxvU4ekhJ)
 - [Instagram](https://www.instagram.com/iamurmara)
 - [Tiktok](https://www.tiktok.com/@iamurmara)
 - [x](https://x.com/iamurmara)
