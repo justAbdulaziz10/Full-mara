@@ -6,8 +6,6 @@
 	
 	 Mobile App (Flutter) · FastAPI Backend · Firebase · RevenueCat · AI Inference 
 </div>
-
-=======
 ---
 
 ## Overview
