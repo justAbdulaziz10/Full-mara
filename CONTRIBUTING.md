@@ -1,3 +1,8 @@
+<div align="center">
+	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
+	
+</div>
+
 # Contributing to Mara
 
 Welcome to **Mara** 🚀 — the AI-powered health assistant.  
