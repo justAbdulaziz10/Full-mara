@@ -1,10 +1,9 @@
 <div align="center">
 	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
-  
+  Copyright (c) 2025 Abdulaziz Alkhlaiwe and Omar Al Sumih
+
 </div>
 
-
-Copyright (c) 2025 Abdulaziz Alkhlaiwe and Omar Al Sumih
 
 All rights reserved (with the exceptions and terms described below).
 
