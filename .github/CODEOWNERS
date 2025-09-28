@@ -1,0 +1,18 @@
+# Mara CODEOWNERS
+# Every change in the repository must be reviewed by the founders.
+
+*                @justAbdulaziz10 @gqnxx
+
+# Backend ownership (FastAPI, Supabase, integrations)
+backend/*        @justAbdulaziz10 @gqnxx
+
+# Flutter app (Mara final app)
+marafinal/*      @justAbdulaziz10 @gqnxx
+
+# Scripts and automation
+scripts/*        @justAbdulaziz10 @gqnxx
+
+# Security and legal documents must be reviewed by both founders
+SECURITY.md      @justAbdulaziz10 @gqnxx
+LICENSE.md       @justAbdulaziz10 @gqnxx
+CODE_OF_CONDUCT.md @justAbdulaziz10 @gqnxx
