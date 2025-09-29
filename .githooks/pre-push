@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+echo "🔁 Pre-push checks..."
+make lint
+make test
+scripts/secret_scan.sh
+echo "✅ All checks passed."

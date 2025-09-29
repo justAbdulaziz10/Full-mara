@@ -1,0 +1,22 @@
+{
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchManagers": ["pip"],
+      "groupName": "Python dependencies",
+      "schedule": ["weekly"]
+    },
+    {
+      "matchManagers": ["pub"],
+      "groupName": "Flutter dependencies",
+      "schedule": ["weekly"]
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
+      "schedule": ["weekly"]
+    }
+  ],
+  "timezone": "Asia/Riyadh",
+  "dependencyDashboard": true
+}

@@ -1,0 +1,6 @@
+{
+  "version": "0.2",
+  "language": "en",
+  "words": ["Supabase", "Mara", "FastAPI", "iammara", "Firestore", "Uvicorn"],
+  "ignorePaths": ["node_modules", "build", "dist", "venv", ".venv"]
+}

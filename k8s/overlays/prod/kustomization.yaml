@@ -1,0 +1,8 @@
+resources:
+  - ../../base
+images:
+  - name: ghcr.io/OWNER/REPO/mara-backend
+    newTag: v0.1.0
+replicas:
+  - name: mara-backend
+    count: 4

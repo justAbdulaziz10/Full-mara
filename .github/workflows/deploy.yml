@@ -1,0 +1,116 @@
+name: Deploy Pipeline
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+env:
+  IMAGE: ghcr.io/${{ github.repository }}/mara-backend
+
+jobs:
+  build_test_scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Build
+      - name: Build Docker image
+        run: docker build -t $IMAGE:${{ github.sha }} -f backend/Dockerfile .
+
+      # Unit tests
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.10" }
+      - name: Backend tests
+        run: |
+          cd backend
+          pip install -r requirements.txt
+          pytest -q
+
+      # Security gates
+      - name: Bandit
+        run: pip install bandit && bandit -r backend -q
+      - name: Trivy FS
+        uses: aquasecurity/trivy-action@0.24.0
+        with:
+          scan-type: fs
+          ignore-unfixed: true
+          format: table
+          severity: HIGH,CRITICAL
+          exit-code: 1
+          scan-ref: .
+
+      # Push image (only if all gates pass)
+      - name: GHCR login
+        run: echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+      - name: Push image
+        run: docker push $IMAGE:${{ github.sha }}
+
+  attest_sign:
+    needs: build_test_scan
+    runs-on: ubuntu-latest
+    permissions: { id-token: write, contents: read, packages: write, attestations: write }
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install cosign
+        uses: sigstore/cosign-installer@v3
+      - name: Sign image (keyless)
+        run: cosign sign $IMAGE:${{ github.sha }} --yes
+      - name: Generate SBOM (CycloneDX)
+        run: |
+          pipx install cyclonedx-bom
+          cd backend && pip install -r requirements.txt
+          cyclonedx-py --format json -o ../sbom-backend.json
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with: { name: sbom, path: sbom-backend.json }
+
+  deploy_staging:
+    needs: attest_sign
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - name: Kustomize apply (staging)
+        run: |
+          sed -i "s/newTag:.*/newTag: ${{ github.sha }}/" k8s/overlays/staging/kustomization.yaml
+          kubectl apply -k k8s/overlays/staging
+
+  e2e_dast:
+    needs: deploy_staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: Wait for readiness
+        run: kubectl rollout status deploy/mara-backend -n staging --timeout=120s
+      - name: E2E smoke
+        run: |
+          curl -fsS https://staging.api.iammara.com/healthz
+      - name: OWASP ZAP baseline
+        uses: zaproxy/action-baseline@v0.10.0
+        with:
+          target: "https://staging.api.iammara.com"
+          rules_file_name: ".zap/rules.tsv"
+
+  deploy_prod_canary:
+    needs: e2e_dast
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://api.iammara.com
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set canary image
+        run: |
+          sed -i "s/newTag:.*/newTag: ${{ github.sha }}/" k8s/overlays/prod/kustomization.yaml
+          kubectl apply -k k8s/overlays/prod
+
+  verify_canary_and_promote:
+    needs: deploy_prod_canary
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check SLOs (p95, errors) via API
+        run: |
+          curl -fsS https://monitor.iammara.com/slo/canary | jq
+      - name: Promote to 100% or rollback
+        run: |
+          echo "Promote/rollback logic goes here"

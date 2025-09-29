@@ -1,0 +1,21 @@
+# Ensure consistent line endings
+* text=auto eol=lf
+
+# Treat Markdown as documentation
+*.md diff=markdown
+
+# Python
+*.py linguist-language=Python
+
+# Dart (Flutter)
+*.dart linguist-language=Dart
+
+# JSON/YAML
+*.json diff=json
+*.yml diff=yaml
+*.yaml diff=yaml
+
+# Force binary for models
+*.pt binary
+*.bin binary
+*.h5 binary

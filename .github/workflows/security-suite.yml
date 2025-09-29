@@ -1,0 +1,37 @@
+name: Security Suite
+on:
+  push: { branches: [ main, develop ] }
+  pull_request: { branches: [ main, develop ] }
+jobs:
+  sast-deps-secrets:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Python deps audit
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.10" }
+      - name: Python security (safety + pip-audit + bandit)
+        run: |
+          cd backend
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt safety pip-audit bandit
+          safety check --full-report || true
+          pip-audit || true
+          bandit -r . -q || true
+
+      # Secrets scan (gitleaks)
+      - name: Gitleaks
+        uses: gitleaks/gitleaks-action@v2
+        with: { args: "--no-git -v" }
+
+      # Container/Docker security (Trivy filesystem scan)
+      - name: Trivy FS scan
+        uses: aquasecurity/trivy-action@0.24.0
+        with:
+          scan-type: fs
+          ignore-unfixed: true
+          format: table
+          exit-code: 0
+          severity: HIGH,CRITICAL
+          scan-ref: .

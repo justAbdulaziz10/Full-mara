@@ -1,0 +1,36 @@
+# Ignore Python caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore logs
+*.log
+
+# Git and VCS
+.git
+.gitignore
+
+# Environment files
+.env
+.env.*
+
+# Documentation
+*.md
+docs/
+
+# Local dev
+.vscode/
+.idea/
+
+# Flutter build outputs
+build/
+.android/
+.ios/
+
+# Node / npm
+node_modules/
+
+# Data / datasets (keep outside image)
+*.csv
+*.jsonl
+*.db
