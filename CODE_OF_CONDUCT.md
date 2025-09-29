@@ -1,3 +1,8 @@
+<div align="center">
+	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
+	
+</div>
+
 # Mara Code of Conduct & Contribution Terms
 
 ## Our Pledge
