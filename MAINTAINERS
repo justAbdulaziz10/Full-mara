@@ -1,0 +1,38 @@
+# Mara Project Maintainers
+
+This file lists the official maintainers of the Mara project.  
+Maintainers are responsible for reviewing pull requests, managing issues, ensuring security, and overseeing the long-term vision of the project.
+
+---
+
+## Core Maintainers
+
+- **Abdulaziz Alkhlaiwe**  
+  Role: CEO · Backend · Vision Owner  
+  Email: abdulaziz.alkhlaiwe@iammara.com
+  GitHub: [justAbdulaziz10](https://github.com/justAbdulaziz10)  
+
+- **Omar Al Sumih**  
+  Role: CTO · AI & Security Specialist  
+  Email: omaralsumih@iammara.com
+  GitHub: [gqnxx](https://github.com/gqnxx)  
+
+- **Muhannad Almuwayhi**  
+  Role: CFO · Financial Strategy & Planning  
+  Email: muhannad.almuwayhi@iammara.com
+
+---
+
+## Responsibilities
+
+Maintainers are expected to:
+- Review and merge pull requests.  
+- Triage and respond to GitHub issues.  
+- Ensure compliance with the [Code of Conduct](CODE_OF_CONDUCT.md).  
+- Handle and coordinate responses to security reports (see [SECURITY.md](SECURITY.md)).  
+- Manage release cycles, version tagging, and changelogs.  
+- Oversee contributions to ensure alignment with Mara’s long-term mission.  
+
+---
+
+_Last updated: September 2025_
