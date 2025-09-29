@@ -1,0 +1,6 @@
+# Mara Project .mailmap
+# This file maps multiple emails/names of contributors to a single canonical identity.
+# Format:
+# Proper Name <primary@email.com> Commit Name <other@email.com>
+
+Abdulaziz Alkhlaiwe <abdulazizalkhlaiwe@gmail.com> Abdulaziz <abdulazizalkhlaiwe@gmail.com>

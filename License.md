@@ -1,6 +1,9 @@
 <div align="center">
 	<img src="marafinal/assets/logo.png" alt="Mara Logo" width="120" />
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 34c60d2 (WIP: local changes before rebase)
   Copyright (c) 2025 Abdulaziz Alkhlaiwe and Omar Al Sumih
 
 </div>
